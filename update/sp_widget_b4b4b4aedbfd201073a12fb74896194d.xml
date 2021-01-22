@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+	var c = this;
+	var flg = 0;
+
+	c.addDash = function(){
+		if(flg==0 && c.data.connCompCode.length==7){
+			c.data.connCompCode += '-';
+			flg = 1;
+		}
+		else if(flg==1 && c.data.connCompCode.length<=6){
+			flg = 0;
+		}
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.flex{
+	display:flex; 
+  align-items:center; 
+  justify-content: space-between;
+}
+.dateBox{
+	width:25px;
+  height:20px;
+}
+.yearBox{
+	width:50px;
+  height:20px
+}
+#connCompCode{
+  width:73%;
+  letter-spacing: 14px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>insert_value</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Insert Value</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-22 01:25:42</sys_created_on>
+        <sys_id>b4b4b4aedbfd201073a12fb74896194d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Insert Value</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_widget_b4b4b4aedbfd201073a12fb74896194d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-22 01:40:45</sys_updated_on>
+        <template><![CDATA[<form>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Contact Info
+    </div>
+    <div class="panel-body">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" ng-model="c.data.address" placeholder="Address">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPostcode">Postcode</label>
+          <input type="text" class="form-control" id="inputPostcode" ng-model="c.data.postcode" placeholder="Postcode">
+        </div>
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputContractComp">Contracted company</label>
+        <input type="text" class="form-control" id="inputContractComp" ng-model="c.data.contractComp" placeholder="Contracted company">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputJobTitle">Job title</label>
+        <input type="text" class="form-control" id="inputJobTitle" ng-model="c.data.jobTitle" placeholder="Job title">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputName">Full name</label>
+        <input type="text" class="form-control" id="inputName" ng-model="c.data.contractName" placeholder="Full name">
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Application type
+    </div>
+    <div class="panel-body">
+      <div class="radio">
+        <label><input type="radio" name="optType" checked>New</label>
+      </div>
+      <div class="radio flex" >
+        <label style="width:70px"><input type="radio" name="optType">Update</label>
+        <div> 
+          Day <input type=" text" class="dateBox" ng-model="c.data.updateDay"> 
+          Month <input type=" text" class="dateBox" ng-model="c.data.updateMonth">
+         	Year <input type=" text" class="yearBox" ng-model="c.data.updateYear"> 
+        </div>
+        <div/>
+      </div>
+      <div class="radio flex">
+        <label style="width:70px"><input type="radio" name="optType">Cancel</label>
+        <div> 
+          Day <input type=" text" class="dateBox" ng-model="c.data.deleteDay"> 
+          Month <input type=" text" class="dateBox" ng-model="c.data.deleteMonth">
+         	Year <input type=" text" class="yearBox" ng-model="c.data.deleteYear"> 
+        </div>
+        <div/>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Contact information
+    </div>
+    <div class="panel-body">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="CompName">Company name</label>
+          <input type="text" class="form-control" id="CompName" ng-model="c.data.compName" placeholder="Company name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="dept">Department</label>
+          <input type="text" class="form-control" id="dept" ng-model="c.data.dept" placeholder="Department">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="fullname">Full name</label>
+          <input type="text" class="form-control" id="fullname" ng-model="c.data.contactName" placeholder="Mr./Mrs.">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" ng-model="c.data.email" placeholder="Email">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="telephone">Telephone</label>
+          <input type="text" class="form-control" id="telephone" ng-model="c.data.tel" placeholder="Telephone">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="form-group col-md-6">
+          <label for="connCompCode">Connection company code</label>
+          <input type="text" class="form-control" id="connCompCode" ng-change="c.addDash()" ng-model="c.data.connCompCode" maxlength="12" size="12">
+        </div>
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>]]></template>
+    </sp_widget>
+</record_update>

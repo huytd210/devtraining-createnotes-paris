@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-21 04:13:53</sys_created_on>
+        <sys_id>f2915412dbb1201073a12fb74896197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_createnotes_ip_network_table.x_snc_createnotes.ip_network_table_user</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_security_acl display_value="x_snc_createnotes_ip_network_table">aa915412dbb1201073a12fb748961979</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f2915412dbb1201073a12fb74896197f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-21 04:13:53</sys_updated_on>
+        <sys_user_role display_value="x_snc_createnotes.ip_network_table_user" name="x_snc_createnotes.ip_network_table_user">ae915412dbb1201073a12fb748961946</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</application>
+        <file_path/>
+        <instance_id>72a43d87dbc61b4c89535d00cf9619f5</instance_id>
+        <instance_name>dev59611</instance_name>
+        <name>sys_security_acl_role_f2915412dbb1201073a12fb74896197f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-01-21 04:13:53</sys_created_on><sys_id>f2915412dbb1201073a12fb74896197f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_createnotes_ip_network_table.x_snc_createnotes.ip_network_table_user</sys_name><sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package><sys_policy/><sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope><sys_security_acl display_value="x_snc_createnotes_ip_network_table">aa915412dbb1201073a12fb748961979</sys_security_acl><sys_update_name>sys_security_acl_role_f2915412dbb1201073a12fb74896197f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-01-21 04:13:53</sys_updated_on><sys_user_role display_value="x_snc_createnotes.ip_network_table_user" name="x_snc_createnotes.ip_network_table_user">ae915412dbb1201073a12fb748961946</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1779002012</payload_hash>
+        <record_name>x_snc_createnotes_ip_network_table.x_snc_createnotes.ip_network_table_user</record_name>
+        <reverted_from/>
+        <source>3f9cb9e5db71201073a12fb748961989</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-21 04:13:53</sys_created_on>
+        <sys_id>72915412dbb1201073a12fb748961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1772326132a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-21 04:13:53</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>ba9154122db12010fbfaf9798a547783</update_guid>
+        <update_guid_history>ba9154122db12010fbfaf9798a547783:-1779002012</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_createnotes_ip_network_table.x_snc_createnotes.ip_network_table_user">6ac6d416dbb1201073a12fb748961955</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-01-21 04:36:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>2b239101ae3b4801972cf90ff828e8b9</sys_id>
+        <sys_metadata>f2915412dbb1201073a12fb74896197f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_createnotes_ip_network_table.x_snc_createnotes.ip_network_table_user</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_parent display_value="">aa915412dbb1201073a12fb748961979</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_scope_delete display_value="">64daa03572704d49a928bf08a985d6f9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_f2915412dbb1201073a12fb74896197f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_f2915412dbb1201073a12fb74896197f">72915412dbb1201073a12fb748961984</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-01-21 04:36:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
